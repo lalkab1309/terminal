@@ -298,3 +298,97 @@ body {
 .main2_1 .main2_1_osnova .description_of_services ul li {
   padding: 10px;
 }
+
+.main_2 {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid black;
+  
+}
+
+.main_2 .main_2_zagolovok {
+  border: 0 solid black;
+  background: #a9b3d6; 
+  /*background: rgba(0, 0, 0, 0.5); /* устанавливаем прозрачность фона */
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.main_2 .main_2_zagolovok h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  opacity: 1; /* убираем прозрачность у текста */
+}
+
+.main_2 .main_2_osnova {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_2 .services {
+  border: 0 solid black;
+  border-radius: 20px;
+  background: #EFE8D2;
+  padding: 30px;
+  margin-top: 20px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.main_2 .services p {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.main_2 .news {
+  border: 0 solid black;
+  border-radius: 20px;
+  background: #EFE8D2;
+  padding: 30px;
+  margin-top: 20px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.main_2 .news p {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.main_2 .work_time {
+  border: 0 solid black;
+  border-radius: 20px;
+  background: #EFE8D2;
+  padding: 30px;
+  margin-top: 20px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.main_2 .work_time p {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.main_2 .offers {
+  border: 0 solid black;
+  border-radius: 20px;
+  background: #EFE8D2;
+  padding: 30px;
+  margin-top: 20px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.main_2 .offers p {
+  padding-top: 10px;
+  font-size: 20px;
+}
