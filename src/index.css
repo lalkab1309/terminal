@@ -213,3 +213,88 @@ body {
   cursor: pointer;
   z-index: 1;
 }
+
+.main2_1 {
+  width: 100%;
+  height: auto;
+}
+
+.main2_1 .main2_1_zagolovok {
+  border: 0 solid black;
+  background: #a9b3d6; 
+  /*background: rgba(0, 0, 0, 0.5); /* устанавливаем прозрачность фона */
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.main2_1 .main2_1_zagolovok h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  opacity: 1; /* убираем прозрачность у текста */
+}
+
+.main2_1 .main2_1_osnova .history {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main2_1 .main2_1_osnova .history h3 {
+  text-align: center;
+}
+
+.main2_1 .main2_1_osnova .history p {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.main2_1 .main2_1_osnova .mission {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main2_1 .main2_1_osnova .mission h3 {
+  text-align: center;
+}
+
+.main2_1 .main2_1_osnova .mission p {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.main2_1 .main2_1_osnova .description_of_services {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main2_1 .main2_1_osnova .description_of_services h3 {
+  text-align: center;
+}
+
+.main2_1 .main2_1_osnova .description_of_services p {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.main2_1 .main2_1_osnova .description_of_services ul {
+  padding-left: 30px;
+  padding-top: 10px; 
+  margin-top: 10px;
+  font-size: 20px;
+  border: 0 solid black;
+  border-radius: 20px;
+  background: #EFE8D2;
+}
+
+.main2_1 .main2_1_osnova .description_of_services ul li {
+  padding: 10px;
+}
