@@ -1,20 +1,19 @@
-import React, { Component } from 'react'
-import Header from './components/Header'
-import Main_1 from './components/Main_1'
-import Main2_1 from './components/Main2_1'
-import Main_2 from './сomponents/Main_2'
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+import Contacts from './pages/contacts';
 
-export class App extends Component {
-  render() {
-    return (
-        <div className='wrapper'>
-          <Header />
-          <Main_1 />
-          <Main2_1 />
-          <Main_2 />
-        </div>
-    )
-  }
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contacts" element={<Contacts />} />
+        </Routes>
+      </Router>
+    </div>
+  );
 }
 
-export default App
+export default App;
