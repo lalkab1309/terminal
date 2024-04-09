@@ -1,7 +1,7 @@
 import React, { useEffect }  from 'react'
 import { useLocation } from 'react-router-dom';
-import Main_con from './components/Main_con'
-import Header from './components/Header'
+import Main_con from '../Components/Main_con'
+import Header from '../Components/Header'
 
 function Contacts() {
 

@@ -1,20 +1,27 @@
-import React, { Component } from 'react'
-import Header from './components/Header'
-import Main_1 from './components/Main_1'
-import Main2_1 from './components/Main2_1'
-import Main_2 from './сomponents/Main_2'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom';
+import Header from '../Components/Header'
+import Main_1 from '../Components/Main_1'
+import Main_2 from '../Components/Main_2'
+import Main2_1 from '../Components/Main2_1'
 
-export class App extends Component {
-  render() {
+function Home() {
+
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        document.title = 'Контейнерный терминал';
+        window.scrollTo(0, 0);
+      }, [pathname]);
+
     return (
         <div className='wrapper'>
-          <Header />
-          <Main_1 />
-          <Main2_1 />
-          <Main_2 />
+            <Header />
+            <Main_1 />
+            <Main2_1 />
+            <Main_2 />
         </div>
     )
-  }
 }
 
-export default App
+export default Home

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+/*Главная страница*/
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +12,10 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
   background: #EFEEEA;
   overflow-x: hidden;
+  /* background: url(./img/background_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
   height: auto;
 }
 
@@ -20,11 +27,15 @@ body {
 .header {
   width: 100%;
   height: 120px;
+  /* border: 1px solid black; */
   border-bottom: 1px solid #000;
   display: flex;
   align-items: center;
+  background: #EFEEEA;
   padding: 0 30px;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1000;
 }
 
 .header .header_logo {
@@ -84,6 +95,9 @@ body {
 }
 
 .header .profile {
+  /*border: 0 solid black;
+  border-radius: 10px;
+  padding: 10px 20px;*/
   display: flex;
   align-items: center;
   float: right;
@@ -112,7 +126,89 @@ body {
   color: red;
 }
 
+/* .main_1 {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #000;
+}
+
+.main_1 .main_1_zagolovok {
+  border: 0 solid black;
+  background: #a9b3d6; 
+  /*background: rgba(0, 0, 0, 0.5); /* устанавливаем прозрачность фона 
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.main_1 .main_1_zagolovok h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  opacity: 1; /* убираем прозрачность у текста 
+}
+
+.main_1 .block_novosti {
+  position: relative; /* Устанавливаем относительное позиционирование для родительского блока */
+  /* border: 0 solid black;
+  background: #FF8000;
+  border-radius: 10px; 
+  width: 90%;
+  height: 500px;
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+
+.main_1 .novosti img {
+  position: absolute; /* Устанавливаем абсолютное позиционирование для картинки 
+  top: 50%; /* Выравниваем картинку по вертикали относительно родительского блока 
+  transform: translate(-50%, -50%); /* Сдвигаем картинку наполовину своей ширины и высоты влево и вверх 
+  width: 40%; /* Устанавливаем ширину картинки в 100% от ширины родительского блока 
+  height: 400px; /* Устанавливаем высоту картинки автоматически в зависимости от ширины 
+  border-radius: 20px;
+  margin-left: 25%;
+  opacity: 1;
+}
+
+.main_1 .block_novosti .next {
+  position: absolute; /* Устанавливаем абсолютное позиционирование для кнопки "next" 
+  top: 200px; /* Выравниваем кнопку по вертикали относительно родительского блока 
+  right: 30px; /* Устанавливаем отступ слева от правого края родительского блока 
+  width: 30px;
+  height: 50px;
+  transform: translateY(-50%); /* Выравниваем кнопку по вертикали относительно своей оси 
+  cursor: pointer; /* Устанавливаем курсор в виде руки при наведении на кнопку
+  z-index: 1; /* Устанавливаем z-index для наложения кнопки на картинку 
+}
+
+.main_1 .block_novosti .back {
+  position: absolute; /* Устанавливаем абсолютное позиционирование для кнопки "back" 
+  top: 200px; /* Выравниваем кнопку по вертикали относительно родительского блока 
+  left: 30px; /* Устанавливаем отступ слева от левого края родительского блока 
+  width: 50px;
+  height: 50px;
+  transform: translateY(-50%); /* Выравниваем кнопку по вертикали относительно своей оси 
+  cursor: pointer; /* Устанавливаем курсор в виде руки при наведении на кнопку 
+  z-index: 1; /* Устанавливаем z-index для наложения кнопки на картинку 
+}
+
+.main_1 .novosti_text {
+  text-align: center;
+  margin-left: 40%;
+  padding-top: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+} */
+
 .main_1 {
+  padding-top: 120px;
   width: 100%;
   height: auto;
   border-bottom: 1px solid #000;
@@ -214,91 +310,6 @@ body {
   z-index: 1;
 }
 
-.main2_1 {
-  width: 100%;
-  height: auto;
-}
-
-.main2_1 .main2_1_zagolovok {
-  border: 0 solid black;
-  background: #a9b3d6; 
-  /*background: rgba(0, 0, 0, 0.5); /* устанавливаем прозрачность фона */
-  border-radius: 10px;
-  width: 100%;
-  height: auto;
-  z-index: -1;
-}
-
-.main2_1 .main2_1_zagolovok h2 {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 600;
-  color: white;
-  opacity: 1; /* убираем прозрачность у текста */
-}
-
-.main2_1 .main2_1_osnova .history {
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.main2_1 .main2_1_osnova .history h3 {
-  text-align: center;
-}
-
-.main2_1 .main2_1_osnova .history p {
-  padding-top: 10px;
-  font-size: 20px;
-}
-
-.main2_1 .main2_1_osnova .mission {
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.main2_1 .main2_1_osnova .mission h3 {
-  text-align: center;
-}
-
-.main2_1 .main2_1_osnova .mission p {
-  padding-top: 10px;
-  font-size: 20px;
-}
-
-.main2_1 .main2_1_osnova .description_of_services {
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.main2_1 .main2_1_osnova .description_of_services h3 {
-  text-align: center;
-}
-
-.main2_1 .main2_1_osnova .description_of_services p {
-  padding-top: 10px;
-  font-size: 20px;
-}
-
-.main2_1 .main2_1_osnova .description_of_services ul {
-  padding-left: 30px;
-  padding-top: 10px; 
-  margin-top: 10px;
-  font-size: 20px;
-  border: 0 solid black;
-  border-radius: 20px;
-  background: #EFE8D2;
-}
-
-.main2_1 .main2_1_osnova .description_of_services ul li {
-  padding: 10px;
-}
-
 .main_2 {
   width: 100%;
   height: auto;
@@ -391,4 +402,115 @@ body {
 .main_2 .offers p {
   padding-top: 10px;
   font-size: 20px;
+}
+
+.main2_1 {
+  width: 100%;
+  height: auto;
+}
+
+.main2_1 .main2_1_zagolovok {
+  border: 0 solid black;
+  background: #a9b3d6; 
+  /*background: rgba(0, 0, 0, 0.5); /* устанавливаем прозрачность фона */
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.main2_1 .main2_1_zagolovok h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  opacity: 1; /* убираем прозрачность у текста */
+}
+
+.main2_1 .main2_1_osnova .history {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main2_1 .main2_1_osnova .history h3 {
+  text-align: center;
+}
+
+.main2_1 .main2_1_osnova .history p {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.main2_1 .main2_1_osnova .mission {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main2_1 .main2_1_osnova .mission h3 {
+  text-align: center;
+}
+
+.main2_1 .main2_1_osnova .mission p {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.main2_1 .main2_1_osnova .description_of_services {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main2_1 .main2_1_osnova .description_of_services h3 {
+  text-align: center;
+}
+
+.main2_1 .main2_1_osnova .description_of_services p {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.main2_1 .main2_1_osnova .description_of_services ul {
+  padding-left: 30px;
+  padding-top: 10px; 
+  margin-top: 10px;
+  font-size: 20px;
+  border: 0 solid black;
+  border-radius: 20px;
+  background: #EFE8D2;
+}
+
+.main2_1 .main2_1_osnova .description_of_services ul li {
+  padding: 10px;
+}
+
+
+/*Страница Контакты*/
+
+.main_con {
+  padding-top: 120px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 20px;
+}
+
+
+/*Страница Авторизации*/
+
+.wrapper_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+}
+
+.loginForm {
+  margin-top: 400px;
+  text-align: center;
 }
